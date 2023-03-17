@@ -17,13 +17,13 @@ export const Navbar = () => {
     <div>
       <nav
         className={`fixed top-0 flex justify-around bg-red py-20 px-6 ${
-          colorChange ? "bg-red-400" : "bg-transparent"
+          colorChange ? "bg-[#01486A]" : "bg-transparent"
         }  w-[100%] `}
       >
         <a href="#">
           <div className="inline-flex items-center">
             {/* <Logo className="cursor-pointer" /> */}
-            <span className="text-2xl font-bold tracking-wider text-center">
+            <span className="text-2xl text-white font-bold tracking-wider text-center">
               Technology Solutions
             </span>
           </div>
