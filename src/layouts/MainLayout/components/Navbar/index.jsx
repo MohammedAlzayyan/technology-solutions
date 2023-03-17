@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <div>
       <nav
-        className={`fixed top-0 flex justify-around bg-red py-20 px-6 ${
+        className={`fixed top-0 flex justify-around bg-red py-20 px-6 z-30 ${
           colorChange ? "bg-[#01486A]" : "bg-transparent"
         }  w-[100%] `}
       >
