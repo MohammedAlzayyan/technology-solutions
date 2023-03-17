@@ -20,7 +20,7 @@ export const Navbar = () => {
           colorChange ? "bg-red-400" : "bg-transparent"
         }  w-[100%] `}
       >
-        <a>
+        <a href="#">
           <div className="inline-flex items-center">
             {/* <Logo className="cursor-pointer" /> */}
             <span className="text-2xl font-bold tracking-wider text-center">
@@ -30,21 +30,34 @@ export const Navbar = () => {
         </a>
         <div className="flex items-center font-semibold">
           <a
+            href="#"
             className="px-6 transition-colors cursor-pointer hover:text-white dark:text-white"
             aria-current="page"
           >
             Home
           </a>
-          <a className="px-6 transition-colors cursor-pointer hover:text-white">
+          <a
+            href="#"
+            className="px-6 transition-colors cursor-pointer hover:text-white"
+          >
             Features
           </a>
-          <a className="px-6 transition-colors cursor-pointer hover:text-white">
+          <a
+            href="#"
+            className="px-6 transition-colors cursor-pointer hover:text-white"
+          >
             Industries
           </a>
-          <a className="px-6 transition-colors cursor-pointer hover:text-white">
+          <a
+            href="#"
+            className="px-6 transition-colors cursor-pointer hover:text-white"
+          >
             Blog
           </a>
-          <a className="px-6 transition-colors cursor-pointer hover:text-white">
+          <a
+            href="#"
+            className="px-6 transition-colors cursor-pointer hover:text-white"
+          >
             Appointment Booking
           </a>
         </div>
