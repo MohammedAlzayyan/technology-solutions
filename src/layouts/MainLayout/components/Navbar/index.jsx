@@ -14,54 +14,56 @@ export const Navbar = () => {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <div>
+    <div className="">
       <nav
-        className={`fixed top-0 flex justify-around bg-red py-20 px-6 z-30 ${
-          colorChange ? "bg-[#01486A]" : "bg-transparent"
+        className={`fixed top-0 flex justify-between items-center py-10 px-32 z-30 ${
+          colorChange ? "bg-primary" : "bg-transparent"
         }  w-[100%] `}
       >
         <a href="#">
-          <div className="inline-flex items-center">
-            {/* <Logo className="cursor-pointer" /> */}
-            <span className="text-2xl text-white font-bold tracking-wider text-center">
-              Technology Solutions
-            </span>
-          </div>
+          {/* <Logo className="cursor-pointer" /> */}
+          <span className="text-xl text-white font-bold tracking-wider">
+            Technology Solutions
+          </span>
         </a>
-        <div className="flex items-center font-semibold">
+        <div
+          className={`flex gap-7 font-semibold ${
+            colorChange ? "text-red" : "text-black"
+          } `}
+        >
           <a
             href="#"
-            className="px-6 transition-colors cursor-pointer hover:text-white dark:text-white"
+            className="transition-colors cursor-pointer hover:text-white dark:text-white"
             aria-current="page"
           >
             Home
           </a>
           <a
             href="#"
-            className="px-6 transition-colors cursor-pointer hover:text-white"
+            className="transition-colors cursor-pointer hover:text-white"
           >
             Features
           </a>
           <a
             href="#"
-            className="px-6 transition-colors cursor-pointer hover:text-white"
+            className="transition-colors cursor-pointer hover:text-white"
           >
             Industries
           </a>
           <a
             href="#"
-            className="px-6 transition-colors cursor-pointer hover:text-white"
+            className="transition-colors cursor-pointer hover:text-white"
           >
             Blog
           </a>
           <a
             href="#"
-            className="px-6 transition-colors cursor-pointer hover:text-white"
+            className=" transition-colors cursor-pointer hover:text-white"
           >
             Appointment Booking
           </a>
         </div>
-        <Button className="absolute right-20 bottom-0">Book a meeting</Button>
+        <Button className="">Book a meeting</Button>
       </nav>
     </div>
   );
